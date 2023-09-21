@@ -1,0 +1,117 @@
+body {
+  text-align: center;
+}
+
+.app {
+  width: 800px;
+  height: 90%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-input {
+  padding: 10px;
+  width: 60%;
+  margin: 20px;
+  text-align: center;
+}
+
+.video-input:active {
+  border: 1px solid #ff0000;
+}
+
+.succes-div {
+  margin-top: 20px;
+  color: #08e534;
+}
+
+.download-btn {
+  width: 120px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  background-color: #ff0000;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.download-btn:hover {
+  cursor: pointer;
+  background-color: #ca0404;
+}
+
+.search-results {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-box {
+  width: 85%;
+  height: 120px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-box img {
+  width: 30%;
+  height: 90%;
+  border: 1px solid black;
+}
+
+.video-box h2 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.video-box-button {
+  width: 15%;
+  height: 25%;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  background-color: #ff0000;
+  transition: 0.5s;
+}
+
+.successful-download {
+  width: 15%;
+  height: 25%;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  background-color: #08e534;
+}
+
+.video-box-button:hover {
+  cursor: pointer;
+  background-color: #ca0404;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #ff0000;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
